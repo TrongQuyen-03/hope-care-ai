@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import DashboardLayout from "@/components/DashboardLayout";
+import ChatBubble from "@/components/ChatBubble";
 import { 
   Calendar, 
   FileText, 
@@ -68,6 +69,7 @@ const PatientDashboard = () => {
       navigation={navigation}
     >
       {renderContent()}
+      <ChatBubble />
     </DashboardLayout>
   );
 };
